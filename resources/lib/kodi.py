@@ -259,7 +259,7 @@ class Kodi:
 
         return item.get('title'), 'Container.Update(%s)' % route
 
-    def list_callback(self, content_type="movies", sort=False) -> None:
+    def list_callback(self, content_type="videos", sort=False) -> None:
         if content_type:
             setContent(self.plugin.handle, content_type)
         if sort:
